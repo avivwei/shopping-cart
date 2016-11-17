@@ -1,10 +1,12 @@
 // an array with all of our cart items
 var cart = [];
+var $cart = $('.cart-list');
+var $total = $('.total');
 
 var updateCart = function () {
   
   var total = 0;
-  $total = $('.total');
+  var $total = $('.total');
   
   var $cart = $('.cart-list');
   $cart.empty();
@@ -27,14 +29,17 @@ var addItem = function (item) {
 };
 
 var clearCart = function () {
-  // TODO: finish
+
+  cart = [];
+  $total.text(0);
+  $cart.empty();
+
 };
 
 $('.view-cart').on('click', function () {
   $('.shopping-cart').toggle();
 
-  // TODO: hide/show the shopping cart!
-
+  
 });
 
 
