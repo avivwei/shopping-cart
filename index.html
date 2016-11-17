@@ -35,7 +35,6 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
   <div class="page-header">
     <h1>SHOPPING CART</h1>
   </div>
@@ -43,11 +42,12 @@
   <div class="container">
     <div class="shopping-cart">
       <p class="cart-title">Items in Cart</p>
-      <div class="cart-list"></div>
+      <div class="cart-list">
+        
+      </div>
       <p>Total: $<span class="total">0</span></p>
       <button class="btn clear-cart">Clear Cart</button>
     </div>
-
 
     <div class="row">
       <div class="col-md-4">
@@ -150,7 +150,9 @@
       </div>
     </div>
   </div>
-
+  <script id="cart-template" type="text/x-handlebars-template">
+  <p> {{name}}  {{price}}$</p>
+</script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
